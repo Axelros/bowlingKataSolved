@@ -12,7 +12,8 @@ import static org.junit.Assert.assertThat;
 public class BowlingGameTest {
     private Game g;
 
-    protected void setUp() throws Exception{
+    @Before
+    public void setUp() throws Exception{
         g = new Game();
     }
 
@@ -39,7 +40,7 @@ public class BowlingGameTest {
         g.roll(5); //spare
         g.roll(3);
         rollMany(17,0);
-        assertEquals(g.score(), 16);
+        assertThat(g.score(), 16);
     }*/
 
 }
