@@ -36,10 +36,11 @@ public class BowlingGameTest {
     }
     @Test
     public void testOneSpare() throws Exception{
-        rollSpare();
+        g.roll(10);
         g.roll(3);
-        rollMany(17,0);
-        assertThat(g.score(), is(16));
+        g.roll(4);
+        rollMany(16,0);
+        assertThat(g.score(), is(24));
     }
 
     private void rollSpare() {
