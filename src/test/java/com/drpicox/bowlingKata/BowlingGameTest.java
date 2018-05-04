@@ -42,5 +42,4 @@ public class BowlingGameTest {
         rollMany(17,0);
         assertThat(g.score(), is(16));
     }
-
 }
