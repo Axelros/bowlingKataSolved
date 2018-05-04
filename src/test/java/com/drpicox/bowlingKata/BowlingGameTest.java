@@ -34,13 +34,13 @@ public class BowlingGameTest {
         rollMany(20, 1);
         assertThat(g.score(), is(20));
     }
-
- /*   public void testOneSpare() throws Exception{
+    @Test
+    public void testOneSpare() throws Exception{
         g.roll(5);
         g.roll(5); //spare
         g.roll(3);
         rollMany(17,0);
-        assertThat(g.score(), 16);
-    }*/
+        assertThat(g.score(), is(16));
+    }
 
 }
